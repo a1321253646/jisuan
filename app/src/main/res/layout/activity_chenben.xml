@@ -24,7 +24,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textColor="#000000"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textSize="20dp" />
 
                 <TextView
@@ -135,7 +135,7 @@
                     android:layout_toLeftOf="@id/price_dangwei"
                     android:layout_toRightOf="@id/price_text"
                     android:gravity="center"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textColor="#000000"
                     android:textSize="20dp" />
 
@@ -169,7 +169,7 @@
                     android:layout_toRightOf="@id/count_text"
                     android:background="#aaaaaa"
                     android:gravity="center"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textColor="#000000"
                     android:textSize="30dp" />
             </RelativeLayout>
@@ -233,7 +233,7 @@
                     android:layout_toLeftOf="@id/jiagong_dangwei"
                     android:layout_toRightOf="@id/jiagong_text"
                     android:gravity="center"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textColor="#000000"
                     android:textSize="30dp" />
             </RelativeLayout>
@@ -265,7 +265,7 @@
                     android:layout_toLeftOf="@id/yunshu_dangwei"
                     android:layout_toRightOf="@id/yunshu_text"
                     android:gravity="center"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textColor="#000000"
                     android:textSize="30dp" />
             </RelativeLayout>
@@ -329,7 +329,7 @@
                     android:layout_toLeftOf="@id/chazhi_dangwei"
                     android:layout_toRightOf="@id/chazhi_text"
                     android:gravity="center"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textColor="#000000"
                     android:textSize="30dp" />
             </RelativeLayout>
