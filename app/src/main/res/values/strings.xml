@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JiZhang</string>
+    <string name="add_history">记一笔</string>
+    <string name="text_record_out">支出</string>
+    <string name="text_addrecord_int">成品</string>
+    <string name="text_addrecord_stock_out">出库</string>
+    <string name="text_addrecord_stock_in">入库</string>
+    <string name="text_tools_chengben">成本计算</string>
+</resources>

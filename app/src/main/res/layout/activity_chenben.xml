@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_time_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/input_time_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/input_time_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/input_time_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/input_time_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/spinner_income"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/level_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spinner_income"
+                    android:text="条 "
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/price_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/level_text"
+                    android:text="单价："
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/price_dangwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="元/公斤"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/input_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/price_dangwei"
+                    android:layout_toRightOf="@id/price_text"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="公斤数："
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/count_dangwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="公斤"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/input_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/count_dangwei"
+                    android:layout_toRightOf="@id/count_text"
+                    android:background="#aaaaaa"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/bingku_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="包装费用："
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/bingku_dangwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="元"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/input_bingku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/bingku_dangwei"
+                    android:layout_toRightOf="@id/bingku_text"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/jiagong_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="加工费用："
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/jiagong_dangwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="元"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/input_jiagong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/jiagong_dangwei"
+                    android:layout_toRightOf="@id/jiagong_text"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/yunshu_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="运输费用："
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/yunshu_dangwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="元"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/input_yunshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/yunshu_dangwei"
+                    android:layout_toRightOf="@id/yunshu_text"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/other_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="其它费用："
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/other_dangwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="元"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/input_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/other_dangwei"
+                    android:layout_toRightOf="@id/other_text"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/chazhi_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="每种规格的差价："
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/chazhi_dangwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="元"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/input_chazhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/chazhi_dangwei"
+                    android:layout_toRightOf="@id/chazhi_text"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/bili_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="次品价格比例："
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/bili_dangwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="%"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/input_bili"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/bili_dangwei"
+                    android:layout_toRightOf="@id/bili_text"
+                    android:gravity="center"
+                    android:text="70"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="总成本"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/tv_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0.00元"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="估价总金额"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/tv_all_guest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0.00元"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/add_bt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/account_header_bg"
+                android:gravity="center"
+                android:text="添加"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_add" />
+            <Button
+                android:id="@+id/chengbeng_bt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/account_header_bg"
+                android:gravity="center"
+                android:text="计算成本"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_add" />
+
+            <Button
+                android:id="@+id/chengbeng_save"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/account_header_bg"
+                android:gravity="center"
+                android:text="保存数据"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_add" />
+
+            <Button
+                android:id="@+id/chengbeng_clean"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/account_header_bg"
+                android:gravity="center"
+                android:text="清空数据"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_add" />
+
+            <Button
+                android:id="@+id/chengbeng_review"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/account_header_bg"
+                android:gravity="center"
+                android:text="查看记录"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_add" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

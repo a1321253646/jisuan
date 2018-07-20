@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:text="次" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/checkbox"
+        android:entries="@array/Data"/>
+    <TextView
+        android:id="@+id/item_chengben_dangwei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="公斤"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true" />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/item_chengben_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/spinner"
+        android:layout_toLeftOf="@id/item_chengben_dangwei"
+        android:background="#aaaaaa"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ly_chengping"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/checkbox">
+        <TextView
+            android:id="@+id/item_changpei_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:text="0.00"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/item_chengping_dangwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元/公斤"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ly_chengping_all"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/checkbox">
+        <TextView
+            android:id="@+id/item_changpei_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/item_changpei_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:text="0.00"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/item_changpei_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元 "
+            android:textSize="20dp" />
+    </LinearLayout>
+</RelativeLayout>
